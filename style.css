@@ -17,6 +17,21 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}a{
+  color:whitesmoke;
+
+}
+#link {
+  font-style: oblique;
+  font-size: 30px;
+  
+  height:100%;
+  width:100%;
+  background-color:black;
+  justify-content: space-around;
+  display: flex;
+  flex:1 1 0;
+  background-image: url(Black\ Hand\ Drawn\ Menu\ Background\ Picture\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpeg);
 }
 
 .navbar {
@@ -42,6 +57,7 @@ header {
   color: white;
   text-decoration: none;
   font-weight: 500;
+
 }
 
 .hero {
@@ -77,11 +93,13 @@ header {
 .info-section {
   padding: 4rem 2rem;
   text-align: center;
-  background: #f8f8f8;
+  /* background: white */
+
+  
 }
 
 .info-section:nth-child(even) {
-  background: #fff;
+  background:white
 }
 
 footer {
@@ -92,13 +110,40 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 680px) {
+
+  .hero{
+    padding: 2rem 1rem;
+    text-align: centre;
+  }
   .hero h2 {
     font-size: 2rem;
   }
-
+#link{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  background-image: 80px;
+}
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
+  }
+  .cta-btn{
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .hero p{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .info-section{
+    padding: 2rem 1rem;
+  }
+  footer{
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
   }
 }
